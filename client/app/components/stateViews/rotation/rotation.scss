@@ -1,0 +1,31 @@
+.rotation {
+    height: 90%;
+    width: 100%;
+    position: relative;
+
+    &-fixed {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 4;
+        background: purple;
+    }
+
+    &-overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 5;
+        opacity: 0.7;
+        background: lightblue;
+        will-change: transform;
+        transform: translateZ(0);
+        animation: fatRotation 5s linear infinite;
+    }
+
+}
+
+@keyframes fatRotation {
+    0% { transform: translateZ(0) rotate(0deg); }
+    100% { transform: translateZ(0) rotate(180deg); }
+}

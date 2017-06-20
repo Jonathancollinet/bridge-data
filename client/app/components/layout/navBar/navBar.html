@@ -1,0 +1,6 @@
+<div class="navbar">
+    <div class="title"><a ui-sref="home">Bridge Data</a></div>
+    <div class="links">
+        <a class="link" ng-repeat="link in $ctrl.links track by $index" ui-sref="{{link.name}}">{{link.name}}</a>
+    </div>
+</div>

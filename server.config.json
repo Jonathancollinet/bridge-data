@@ -1,0 +1,9 @@
+{
+    "publicPath": "/home/john/work/discogs/server/public/",
+    "serverPort": 9002,
+    "apiPort": 9003,
+    "mongoose": {
+        "port": "27017",
+        "database": "bridge"
+    }
+}
